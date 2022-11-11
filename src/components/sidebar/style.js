@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color } from "../../App/shared/utils/style";
+import { Color, Fonts } from "../../App/shared/utils/style";
 
 
 export const GridContainer = styled.div`
@@ -7,7 +7,8 @@ export const GridContainer = styled.div`
     grid-template-columns: 14% auto;
     grid-template-rows: auto auto;
     color: ${Color.textDarkest};
-    background-color: ${Color.backgroundDark};
+    background-color: ${({ bgcolor }) => bgcolor ? bgcolor : "none"} ;
+                      
     height: 100vh;
 `
 
@@ -23,12 +24,12 @@ export const SideBarMenu = styled.div`
         background-color: ${Color.primary};
         height: 90px;
         color:#fff;
-        font-weight: 500;
-        font-size: 19px;
+        font-weight: ${Fonts.FONT_WEIGHT_MEDIUM};
+        font-size: ${Fonts.FONT_SIZE_MEDIUM}px;
     }
 
     & >:nth-child(n+2){
-        font-weight: 400;
+        font-weight: ${Fonts.FONT_WEIGHT_SEMI_MEDIUM};
         
     }
 
@@ -49,6 +50,7 @@ export const LinkOption = styled.a`
     color: ${Color.textDarkest};
     height: 50px;
     text-decoration: none;
+    cursor: pointer;
 
     & > svg{
         margin-right: 0.8em;

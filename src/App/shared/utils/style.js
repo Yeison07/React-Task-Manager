@@ -5,6 +5,7 @@ export const Color = {
     warning: "",
     secondary: "",
 
+    textWhite:"#FFFFFF",
     textDarkest: '#121212',
     textDark: '#',
     textMedium: '#',
@@ -32,6 +33,7 @@ export const Fonts = {
     PRIMARY_COLOR: '#000',
     SECONDARY_COLOR: '#fff',
     FONT_WEIGHT_LIGHT: 200,
-    FONT_WEIGHT_MEDIUM: 600,
+    FONT_WEIGHT_SEMI_MEDIUM:400,
+    FONT_WEIGHT_MEDIUM: 500,
     FONT_WEIGHT_HEAVY: 800
 }

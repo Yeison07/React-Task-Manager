@@ -1,4 +1,4 @@
-import { CardProjectS, TitleS } from "./style";
+import { CardProjectS, DescriptionText, TitleS } from "./style";
 import {ReactComponent as ProjectSpecialIcon} from '../../App/assets/images/folder_special.svg'
 const CardProject = () => {
     return (
@@ -7,7 +7,8 @@ const CardProject = () => {
             <div>
                 <TitleS>Title</TitleS>
                 <hr />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum debitis minima vel aliquid sit, in labore facilis repudiandae illo mollitia rem expedita molestias delectus voluptatem. Ex, illum. Ea, dolore quo.</p>
+                <DescriptionText>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam pariatur odit culpa illo et dolores, modi repellendus fugit distinctio voluptatibus. Dolorem culpa, enim reprehenderit quaerat nostrum debitis perferendis ea libero.
+                </DescriptionText>
             </div>
             <hr style={{height:"250px"}} />
             

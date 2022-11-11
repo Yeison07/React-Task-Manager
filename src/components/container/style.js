@@ -5,9 +5,10 @@ export const Container= styled.div`
     width: ${({width})=> width ? width : "100%"};
     display: flex;
     flex-wrap: ${({wrap})=> wrap ? wrap : "nowrap"};
-    align-items: center;
-    justify-content: center;
+    align-items: ${({align})=> align ? align : "center"};
+    justify-content: ${({justify})=> justify ? justify : "center"};
     flex-direction: ${({direction})=> direction };
-    background-color: ${({bgcolor})=> bgcolor ? bgcolor : "#edede9"};
+    background-color: ${({bgcolor})=> bgcolor ? bgcolor : ""};
+    
    
 `;

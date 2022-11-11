@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { Color } from "../../App/shared/utils/style";
+import { Color,Fonts } from "../../App/shared/utils/style";
 
 export const FooterS=styled.footer`
     background-color: ${Color.backgroundLight};
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 50px;
+    margin-top: 3em;
     width: 100%;
-    
+    font-size: ${Fonts.FONT_SIZE_SMALL}px;
+    color:${Color.textLight}
 
 `

@@ -1,16 +1,34 @@
 import React from "react";
 import {createBrowserRouter,Route,RouterProvider} from 'react-router-dom'
-import DashBoard from "../components/dashboard/dashboard";
+import CardProject from "../components/cardProject/card-project";
+import DashBoard from "../components/dashboard/dashborad";
+import ListMembersActive from "../components/dashboard/list-members-actives";
+import ListProjects from "../components/dashboard/list-projects";
+
 import Home from "../components/home/home";
-import SideBar from "../components/sidebar/sidebar";
+
 
 export const router= createBrowserRouter([
     {
         path:"/",
-        element:<Home></Home>
+        element:<Home />  
     },
     {
-        path:"/inicio/listado_proyectos",
-        element:<DashBoard></DashBoard>
+        path:"/inicio",
+        element:<DashBoard />,
+        children:[
+            {
+                path:"/inicio/lista_proyectos",
+                element:<ListProjects></ListProjects>
+            },
+            {
+                path:"/inicio/miembros_activos",
+                element:<ListMembersActive></ListMembersActive>
+            },
+            {
+                path:"/inicio/historial_miembros",
+            
+            }
+        ]
     }
     ]);
