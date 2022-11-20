@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color,Fonts } from "../../App/shared/utils/style";
+import { Color,Fonts } from "../../App/shared/styles/style";
 
 export const FooterS=styled.footer`
     background-color: ${Color.backgroundLight};

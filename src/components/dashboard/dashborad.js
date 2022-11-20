@@ -1,10 +1,6 @@
-import Footer from "../footer/footer";
 import SideBar from "../sidebar/sidebar";
 import { GridContainer } from "../sidebar/style";
-import {Container} from '../container/style'
-import CardProject from "../cardProject/card-project";
-import { TitleS } from "../cardProject/style";
-import { Color } from "../../App/shared/utils/style";
+import { Color } from "../../App/shared/styles/style";
 import { Outlet } from "react-router-dom";
 
 const DashBoard = () => {
@@ -12,7 +8,6 @@ const DashBoard = () => {
         <GridContainer bgcolor={Color.backgroundDark}>
             <SideBar/>
             <Outlet />
-            
         </GridContainer>
      );
 }

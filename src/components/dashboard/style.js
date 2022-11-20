@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Fonts } from "../../App/shared/utils/style"
+import { Fonts } from "../../App/shared/styles/style"
 
 
 export const SubTitleS=styled.p`

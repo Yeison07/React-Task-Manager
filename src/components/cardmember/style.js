@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color } from "../../App/shared/utils/style";
+import { Color } from "../../App/shared/styles/style";
 
 export const CardMemberS= styled.div`
     display: flex;
@@ -25,7 +25,4 @@ export const ProfileContainer= styled.div`
     background-image: url(${({imgUrl})=> imgUrl ? imgUrl : "none"});
     background-position: center;
     
-
-
-
 `

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color,Fonts } from "../../App/shared/utils/style";
+import { Color,Fonts } from "../../App/shared/styles/style";
 
 export const CardProjectS=styled.div`
     display: flex;

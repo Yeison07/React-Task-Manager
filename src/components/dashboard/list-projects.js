@@ -1,4 +1,4 @@
-import { Color } from "../../App/shared/utils/style";
+import { Color } from "../../App/shared/styles/style";
 import CardProject from "../cardProject/card-project";
 import { TitleS } from "../cardProject/style";
 import { Container } from "../container/style";

@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputS } from "../input/input";
 import { FormS } from '../form/style';
-import { ButtonS } from '../button/style';
+import { ButtonS } from '../../App/shared/components/button/style';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const Login = () => {
