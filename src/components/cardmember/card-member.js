@@ -3,11 +3,12 @@ import { CardMemberS, ProfileContainer } from "./style";
 import imgUrl from "../../App/assets/images/profile_pic.jpg"
 import { SubTitleS } from "../dashboard/style";
 
-const CardMember = () => {
+const CardMember = ({data}) => {
     return ( 
         <CardMemberS>
                     <ProfileContainer imgUrl={imgUrl} />
-                    <SubTitleS>Nombre aqui</SubTitleS>
+                    <SubTitleS>{data.name}</SubTitleS>
+                    
         </CardMemberS>
      );
 }

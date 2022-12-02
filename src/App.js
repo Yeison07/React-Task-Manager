@@ -3,9 +3,13 @@ import Home from "./components/home/home";
 
 function App() {
   return (
-    <>
-   <Home></Home>
-   </>
+  <html>
+    <body>
+    <Home></Home>      
+    </body>
+  </html>
+   
+   
   );
 }
 

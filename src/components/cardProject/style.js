@@ -5,6 +5,7 @@ export const CardProjectS=styled.div`
     display: flex;
     width: 400px;
     padding: 0 2.5em;
+    
 
     & hr:first-of-type{
         border: 2px solid ${Color.hrLineDark};
@@ -17,6 +18,15 @@ export const CardProjectS=styled.div`
     
     & > div{
         padding-left: 1em;
+    }
+
+    &:hover{
+        -webkit-box-shadow:inset 0px 0px 0px 1px #00000005;
+        -moz-box-shadow:inset 0px 0px 0px 1px #00000005;
+        box-shadow:inset 0px 0px 0px 1px #00000005;
+        background-color: #FFF9F9;
+        border-radius: 1em;
+        
     }
 
     

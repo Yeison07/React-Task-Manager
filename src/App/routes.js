@@ -7,6 +7,7 @@ import ListMembersActive from "../components/dashboard/list-members-actives";
 import ListProjects from "../components/dashboard/list-projects";
 
 import Home from "../components/home/home";
+import BoardProject from "../components/projects-board/board-project";
 
 
 export const router= createBrowserRouter([
@@ -20,7 +21,7 @@ export const router= createBrowserRouter([
         children:[
             {
                 path:"/inicio/lista_proyectos",
-                element:<ListProjects></ListProjects>
+                element:<ListProjects actives={false}></ListProjects>,
             },
             {
                 path:"/inicio/miembros_activos",
@@ -30,6 +31,10 @@ export const router= createBrowserRouter([
                 path:"/inicio/historial_miembros",
                 element:<HistoryMembers></HistoryMembers>
             
+            },
+            {
+                path:"/inicio/nombre_proyecto",
+                element:<BoardProject></BoardProject>
             }
         ]
     }
