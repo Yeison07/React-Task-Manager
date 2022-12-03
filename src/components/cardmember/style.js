@@ -18,9 +18,9 @@ export const CardMemberS= styled.div`
 `
 
 export const ProfileContainer= styled.div`
-    width: 150px;
-    height: 150px;
-    background-size: 150px 150px;
+    width: ${({width})=>width ? width : "150px"};
+    height: ${({height})=>height ? height : "150px"};
+    background-size: ${props => props.width} ${props => props.height};
     border-radius: 50%;
     background-image: url(${({imgUrl})=> imgUrl ? imgUrl : "none"});
     background-position: center;

@@ -23,6 +23,8 @@ export const TaskS = styled.div`
     padding: 1em 1em;
     font-size: ${Fonts.FONT_SIZE_SMALL}px;
     cursor: pointer;
+    touch-action: none;
+    user-select: none;
 
    &:hover{
     background-color: ${Color.backgroundDark};
@@ -31,4 +33,26 @@ export const TaskS = styled.div`
    & > img{
     margin: 0em 0.2em;
    }
+`
+
+export const TaskSHeader=styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    
+
+
+    & > div{
+        display: flex;
+        align-items: center;
+    }
+
+    & div{
+        margin: 0 0.2em;
+    }
+
+
+
+  
+
 `

@@ -1,7 +1,19 @@
 import styled from "styled-components";
+import { Color } from "../../App/shared/styles/style";
+import iconSearch from "../../App/assets/images/search.svg"
 
-export const SearchS=styled.div`
-    border: 1px solid #e2e2e2;
-    border-radius: 7px;
+export const SearchS=styled.input`
+    height: 30px;
+    border: 1px solid ${Color.hrLineDark};
+    background: url(${iconSearch}) no-repeat left;
+    background-size: 20px;
+    padding-left: 2em;
+    
+
+    &:hover{
+        background-color: ${Color.backgroundDark};
+    }
+
+    
 
 `

@@ -9,7 +9,7 @@ import {Link } from "react-router-dom";
 
 const ListProjects = () => {
     return ( 
-        <Container
+        <Container 
          bgcolor={Color.backgroundDark}  direction="column" height="auto">
         <Container align="flex-start" direction="column" height="auto">
         <div style={{margin:"1em 0em 1em 5em"}}>
