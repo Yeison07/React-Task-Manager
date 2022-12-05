@@ -30,20 +30,20 @@ const ListMembersActive = () => {
 
     return (
         <>
-            <Container direction="column">
+            <Container bgcolor={Color.backgroundDark} direction="column" height="auto">
                 <Container direction="column" align="flex-start" height="auto">
                     <div style={{ margin: "1em 0em 1em 5em" }}>
                         <TitleS>Los siguientes miembros se encuentran activos en el semillero</TitleS>
                         <hr style={{ border: `2px solid ${Color.primary}` }} />
                     </div>
                 </Container>
-                <Container wrap="wrap" bgcolor="#fff" width="90%">
+                <Container wrap="wrap" bgcolor="#fff" width="90%" height="auto" min="100vh">
                     
                     {data===null ? <p>Estamos experimentando problemas, por favor intenta más tarde</p> :
                         data.map((el) => <CardMember key={el.id} data={el} />)}
 
                 </Container>
-                <Footer></Footer>
+                <Footer/>
             </Container>
         </>
     );

@@ -1,9 +1,14 @@
 import { CardProjectS, DescriptionText, TitleS } from "./style";
 import {ReactComponent as ProjectSpecialIcon} from '../../App/assets/images/folder_special.svg'
-const CardProject = () => {
+import {ReactComponent as ProjectOffIcon} from '../../App/assets/images/folder_off.svg'
+import React, { useState, useEffect } from 'react';
+
+const CardProject = ({state}) => {
+    const [estado, setEstado] = useState(state);
     return (
         <CardProjectS>
-            <ProjectSpecialIcon width="400" height="130"/>
+            {estado === "off" ? <ProjectOffIcon width="400" height="130"/> : <ProjectSpecialIcon width="400" height="130"/>}
+            
             <div>
                 <TitleS>Title</TitleS>
                 <hr />

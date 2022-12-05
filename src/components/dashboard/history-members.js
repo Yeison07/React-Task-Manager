@@ -41,7 +41,7 @@ const HistoryMembers = () => {
                 </Container>
              
             </Container>
-            <Footer></Footer>
+            
         </Container>
     );
 }

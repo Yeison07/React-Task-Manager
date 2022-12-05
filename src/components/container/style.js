@@ -9,6 +9,6 @@ export const Container= styled.div`
     justify-content: ${({justify})=> justify ? justify : "center"};
     flex-direction: ${({direction})=> direction };
     background-color: ${({bgcolor})=> bgcolor ? bgcolor : ""};
-    
+    min-height: ${({min})=> min ? min : ""};;
    
 `;

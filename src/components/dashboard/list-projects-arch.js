@@ -7,40 +7,41 @@ import React, { useState, useEffect } from 'react';
 import {Link } from "react-router-dom";
 
 
-const ListProjects = () => {
+const ListProjectsArch = () => {
     return ( 
         <Container 
          bgcolor={Color.backgroundDark}  direction="column" height="auto">
         <Container align="flex-start" direction="column" height="auto">
         <div style={{margin:"1em 0em 1em 5em"}}>
-            <TitleS>Los siguientes proyectos estan en curso a la fecha
+            <TitleS>Los siguientes proyectos se encuentran archivados
             </TitleS>
             <hr style={{border:`2px solid ${Color.primary}`}}/>
         </div>
         </Container>
     <Container bgcolor="#FFF" wrap="wrap" width="90%" height="auto" min="100vh">
         <Link to={"/inicio/nombre_proyecto"}>
-        <CardProject />
+        <CardProject state="off"/>
         </Link>
         <Link to={"/inicio/nombre_proyecto"}>
-        <CardProject />
+        <CardProject state="off"/>
         </Link>
         <Link to={"/inicio/nombre_proyecto"}>
-        <CardProject />
+        <CardProject state="off"/>
         </Link>
         <Link to={"/inicio/nombre_proyecto"}>
-        <CardProject />
+        <CardProject state="off"/>
         </Link>
         <Link to={"/inicio/nombre_proyecto"}>
-        <CardProject />
+        <CardProject state="off"/>
         </Link>
         <Link to={"/inicio/nombre_proyecto"}>
-        <CardProject />
+        <CardProject state="off"/>
         </Link>
+        
     </Container>
     <Footer/>
     </Container>
      );
 }
  
-export default ListProjects;
+export default ListProjectsArch;

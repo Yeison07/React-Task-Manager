@@ -8,7 +8,7 @@ export const GridContainer = styled.div`
     grid-template-rows: auto auto;
     color: ${Color.textDarkest};
     background-color: ${({ bgcolor }) => bgcolor ? bgcolor : "none"} ;
-    
+    height: 100vh;
     
 `
 
@@ -16,7 +16,7 @@ export const SideBarMenu = styled.div`
     display: flex;
     flex-direction: column;
     border-right: 1px solid ${Color.borderLight};
-   
+    background-color: ${Color.backgroundDark};
 
     & >:first-child{
         margin: 0em 0em 2.5em 0em;

@@ -20,7 +20,7 @@ const SideBar = () => {
                 <ProjectGoingIcon width="35" />
                 <p>Proyectos en curso</p>
                 </LinkOption>
-            <LinkOption  onClick={() => navigate('lista_proyectos')}>
+            <LinkOption  onClick={() => navigate('lista_proyectos_inactivos')}>
                 <ProjectStopIcon width="35" />
                 <p>Proyectos archivados</p>
                 </LinkOption>
